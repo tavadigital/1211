@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulih AI | Bukan Kamu yang Rusak. Lukamu Cuma Belum Diolah.</title>
+<meta name="description" content="Pendamping 6 minggu di HP untuk perempuan yang diselingkuhi: tiap pagi satu bacaan pendek dan satu latihan 5 menit, tiap malam yang berat ada Teman Malam dan Tombol Ombak. Dibuka dari browser, tanpa install.">
+<meta property="og:title" content="Pulih AI | Bukan Kamu yang Rusak. Lukamu Cuma Belum Diolah.">
+<meta property="og:description" content="6 minggu, 5 menit sehari. Bacaan Pagi, Latihan 5 Menit, Teman Malam, dan Tombol Ombak untuk malam-malam yang paling berat. Tanpa install, tanpa akun.">
+<meta name="theme-color" content="#4E3558">
+<link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAANbElEQVR42u2be5CW1X3HP79znue97AUWWBYEAbPLTcJFBa3GpOI9EwpM1K222kTbjk0zmXE6rZ380yKTzmRa2/SWMYlT44ytVUK0AhLHW9QSG1FBFKUGFC8oAssKy17e93mfc86vfzzvvrIbLossEbFnZmd39nme7zm/7/ndzu+cIxyiLWOZWc5yBRSQpQtuuEDELw3oQkXHC9IM1HFytT5FOwTZbZCnVe2qVS/+x/9Un8kylslylofBH8ngf7S3t9uVK1d6gKULfu9qhFsVFkTWWlVFVQnaz83J1AQjglR/nPde4AWUv1/14n0PDJbtkAT0v7BowVWtsSn8yBh7marig0MVj6gIIoci7iRpqqiioiJYayJEhBD8E2ko/8naFx/cPpgEGSz878y/+gpr8vdE1o6ruNSDiogYPoVNVQOI5qLYOu93+5B87eENDzx2MAkyYObP/d0rY4nXglofghfBcgo0Vbw11gLeefeVhzesqJEgVYcXlixonyEmflZgtA8hnCrCDyTBGIW9TvTCtevv2wbLjF3IQmlpbzFuv/lZZOOpzvtTTngAEUxQDZGNGtS7C+ZdOOvH7VvGZiawdMG110ZR/v7UVRxCxKncFBdHuShNK+2rN9z/U7l5/s3xB6ZrfWTis1xIVfh0Oryhy68hMrE4n750mo483+yWrnONmLN8cJzqwmdeX4wPDhE5+wO7f74JyGJrrKgS+Iw0VUJkIyGYpQbRS1QVROWzQgCiUpX5EoNKi6pSzfA+G/IjGQEqLQYYl+X2fHY0ACSbdB1rRCiefAub30g0AJF6w2e8/T8Bn3B6+om73t9o2mtEQEAVQlBC0CoRgjHVOKRUCy6nEAHGCCEopXKK855cLiIfR8S5rPu04klSR6XiiCJLPhfVvvlUEyDVKe3pTSgWYs6cNp5zPj+JGa3jaKjP01hfAKC7t0xPb8Kvtu9m42s7ePOdDnp6K9TX5QBBT6BGyJJzr9MTNetJxQHwhXNaWXr5XKaeMZZ8HONDIIRQm2FjDMYI1hjKlZQ33ulg1eOv8MuN2wHI56ITpg0nhABjhJ6+hEnjR/GN67/EObMnEYJSTlxtNgc7v/5JFhEK+cwENr66gx/eu44du/bRUJc/ISQMOwHGCH2lCmd/fhK33HQxLWMa6elNas+G0voFbajPs6ezm3+++yleem0HdcXcsJMwrGHQGqGnN2HBnCncdssimhqLdPeUMUaGLHw/UcYI3T1lmhqL3HbLIubPmUxPb4K1cnISICKUE8fnJo3hlpsuRlVJUo+1H78Law1J6lFVbrnxYqZMHE05cVXnepIRoKpYa/jmH1zE6Ka6THgjw6JVSeoZM6qeb319IdaYYY0KZjjt/sIFbcyZPoGevsqwCD/AtPoqzJk+gS/Mb6WvVDkmkzrhBISg1BVzLL50Ni4EjJyILBJcCCy5dM6wOkMzHOltueJomzKW1knNJMNsowf7mKTiaJ3cTOvkZpKKy1LrT1wDBLwPzJ05kXwuOqFZmwYln4uYd+ZEnA/DUsKJhqHASBxZZrS24IOiByU1J6CYiQ/KzNZxxJEZln6i45x8FKgr5hgzqgFjhDgyyMedGslUXWpVmyy69BesglFEoGlEHflcTFA9bE/92+SgR/QX0ce1R2MM3juScopGQrmvTMfeA6gIcRQRNKBDdFRiBCMG5xzOebxzgGAjSxRZoipe8IEksYgIudhSKqcYKwM0QUQQI7jUUUnSLLUu5g9rmsdMgLGGpJSQJBUaRzYycXIzzS1jePDZd+js+JDOPR/S3dVDvpCjUMzjfThqslMuJSTlCiNGNjC6ZTTNLaNRoHPP4fEqqcOYgcIbI3gf6DvQx5iW0cycO500Sdn62htEcXRI5zxkAqQa27r3dzP1zDauvOpSzjl/LuNPH0e+kEeBUm+JXe/tYeNzL/Pog0/yxuvbaRjRgAAhHOS0NFsBKkpPVy9TZ7Vy5Vcv5ZwL5jF+YgvF+iIcBW+wLNYayuUKuXyOP/yzr3HZ4osYO74ZgDX3PcIP/vaubJyDNOGIiyFjspqViJCUElzquPrrS7jhm9dRVx3k4Vqpt8S/33E/D9yzmjiOB3QuIiTlhDR1XFPFK9YVjgkvV8jV8Iwx9Hb3Mqp5FH/1vVuZddbMWnbaP+vfuvYvePP1t8gX8wNMMzqSnZf6ErxzeB+YMHk83/jLP+KLl58PgPceqRYr+jvp/1tRivVFbr71JmadNZMf/t2P2fnuLmyU7bp754cVL01Tzpg6hdv+5ducMXUy3nmMNYQQsDZ7J87FGd6g002H1ABVxaWOabPaaJkwlqkzW7niq5cwakwTIYRsUKoYYw6TGQ58Z9/e/Tz20JNs25IVOKbNahsWvK1bthNFlmmz2rhs8UKaxowkhJCZVz95qqxd+Sg/+O5dNRKOaAL96vmn3/5jFl/35QGOY/BADuzv5ulH1vHyC68CMO/c2Sz8ypcYMbLxYwl2vHgHCyciPHTvwzz20FO8/ca7RJE9pBMcQICYzNbbZrby/RW319S1/1m24stUat3jv+TO2+9m57u7aguTEJSJU07j5ltv5IuXXfCRaougYZBqnwi8oDWzuOO7/8bKux+iUMz/mt0PcJ4zJs6+7aO83pCmKeMmjuPLV136Ucy3phb7e3v6uOsf7+HO2+8mKVeob6wnV8iRK+QoFAt0d/Xw9CPr6O3u48yzZpAv5Gvf9ic6JxKva98BvvfX32ftTx6laXQTURQdMR8ZQICqEscxHbs6aBo1kmmz2hARvPPs+WAvP1/7DP/6nR/x7JPPUd9Yj40sIQT6D1CqKlFsiXI5Nq1/hRd+sRFVpWnUSIr1BYzJBur9seBFRLmYTetf4fl1G1CFptED8Zxz7N3VyVOPrOOfbruDTc9vZmRTI96Ho65NDusE04pjxuyp1DXUcWD/AfZ8sJfOjg/J5w+f4GS5gqAhZKvEUplKJaV5/FhaTmumobEeULq7eo6IV8PxAdXs/zaOSJKUSjlhzNhRjB0/lsYR9YgxdH3YxZ5de9nXuZ9cPkehkDtqAnbUPEBEKJeSaigxRHFEHGfl6V/zpFX78+UKaCCqL2JyMSIGTR3lrm6c80gcgcmOtB4KbzCOrS9ic3Fm+0lKKCVZeLMG5wMhdWg1CYriiCjO1P1YVqTRkUpcxbp8NhNkC5IBrPYvNlRxfQk2H9M0bzpNc6fR0HY6UUN2ltr19NG7/X32b95Gz+tv45MKtlhAUXz/1pgxQ8LpefM99r+yje5fvU3sPHZEfTV3yNYdYYizfnxl8arQ6jwhdYgxjJjdxsQlF9HQNgkxBnUOrQ5GrEEii3ql580dvL/6GQ689mZmJnHG/3DgSGRrYztxBIgQkgomnyM/ZiSFcWMYc/5cRp09HYzBlyoQAhhBquFNvYegYAy2mAOv7Nv0Op3Pbaa8ay8AhfHNx4ezu5Oks4uQpJh8fEwkDJkAEcEnFZrmTWfS1ZcRj2zA1hcRAV9K0BAQYzL19h7XV8psrK6IWIsvlQ96J49qptYIRPV1x4Xje0tUunp474En2P/yVmw+N2Q/EA29HBWwxTyT2q+gOKEZ31fG95Uzto0Q1RUJ3tO5fjMdz26i0rEv29cbO4rmC89m9PyZUBXA9ZSys6vV3eHjxRFrqDt9HJOuuZzure+gzg/54EGEaq+IqdehnhOqhiWMweZsZpdBObD1HXaueYYDW7ZnslQzstKuTrpefYOOWW1MWPzbjJg+BYygztfs2xSi48IJ1Ww1yx2GfFIMJfTJ4gXXvWWNOSNk6ZIcqR7gy1UTuOZyTD7G9ZYo7exg34v/y/7NWwmpIyrmB212Zr9dKcHEEU1zpjNqwZkUJ4wlqi6phwMnlCu8u/JxujZvwxZyR6tGqREjIYS3ZPG5166PTHSeCy4c9ahs1QnaQg6TzxGStGajtpCvxfHDEZjF+KRm0/0mECruOHFiQlLBVx300dQgOy8cmdS75yJUfi4i56GiR61lqmLyOdQHXG8JESGqFjI06BFZ739We997XJ+rOdjjxRExQxI++0g0K77q0wYTVjnvVGSIewSqNcdDdVU21OLnAAGrGMOFk1U6dMh3B5x3war9L7PTN21Q1Y3WRCj4oY9gWE4rDh/O0F/11kSo6sYdNL5kNmy4M0X5joiI6Kl/ZFQUNVmd7W82bLgzNctYZtZsWLE6denTcRRHqsegBXz67g3FURxV0sozazasWA3LjFleq/frTc773dYaeyqSoIq31ljn/W4TceNBm6PLQ3t7u1m1fsXbLnU3qIq35tQioXpjzKqK9y65ftX6FW+3t7cbWB4MwMqVK317e7tdu+knTziXLlLYm4tiq4rX/orEp/TipCo+F8UW2ItLFz380gNPHnxxsnY9bsuWLdre3m4fenLltmnjp60RMXNjG3/OiJGgof/qbP/G58l+dTaIYGIbS2St8SH8t/Plq9Zs/On6w16d5RCXp5ec9/vtovrnwHxrbaRKVnxQ5WQLGEL/xWmTrSy9d8AGFfmH1c//58ohXZ7mMNfnF593/W+ZEBYF0QtRJgITRGg4yaa+B9iJ8L4ov1Bjf7bm+XvX98twuOvz/weHliDm3OMg6gAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pri:#4E3558;
+  --pri-mid:#6A4A78;
+  --pri-soft:#F2EAF4;
+  --pri-deep:#35233D;
+  --madu:#E9B85C;
+  --madu-soft:#FBEDE6;
+  --madu-text:#8C5530;
+  --bara:#A8465C;
+  --bara-soft:#F8E6EA;
+  --bg:#FBF7F4;
+  --pasir:#F3ECE8;
+  --card:#FFFFFF;
+  --line:#E8DDE0;
+  --line-soft:#F0E8EA;
+  --ink:#2A2230;
+  --muted:#615767;
+  --muted-light:#867C8B;
+  --sans:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --radius:14px;
+  --radius-lg:20px;
+  --sinyal:#237A86;
+  --sinyal-deep:#17565E;
+  --maxw:1120px;
+  --maxw-text:680px;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;overflow-x:hidden;}
+img{max-width:100%;height:auto;display:block;}
+a{color:inherit;}
+h1,h2,h3,h4{margin:0;line-height:1.2;letter-spacing:-0.02em;color:var(--pri);font-family:var(--sans);}
+h1{font-size:clamp(31px,5.8vw,50px);font-weight:800;letter-spacing:-0.03em;line-height:1.1;}
+h2{font-size:clamp(25px,4.2vw,36px);font-weight:800;}
+h3{font-size:clamp(20px,2.6vw,24px);font-weight:700;}
+h4{font-size:17px;font-weight:700;}
+p{margin:0 0 1rem;}
+p:last-child{margin-bottom:0;}
+strong{font-weight:700;color:var(--pri);}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px;}
+.narrow{max-width:var(--maxw-text);margin-left:auto;margin-right:auto;}
+section{padding:56px 0;}
+@media(min-width:768px){section{padding:76px 0;}}
+.sec-alt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.sec-deep{background:var(--pri-deep);color:#fff;}
+.sec-deep h2,.sec-deep h3{color:#fff;}
+.eyebrow{font-size:13.5px;font-weight:700;color:var(--pri-mid);margin:0 0 10px;}
+.eyebrow-bara{color:var(--bara);}
+.eyebrow-madu{color:var(--madu-text);}
+.lead{font-size:clamp(17px,2vw,19px);color:var(--muted);}
+.sec-deep .lead{color:#E4D8E9;}
+.center{text-align:center;}
+
+/* header */
+.site-head{background:var(--card);border-bottom:1px solid var(--line);padding:14px 0;position:relative;z-index:5;}
+.logo{display:inline-block;font-family:var(--sans);font-size:20px;font-weight:800;letter-spacing:-0.02em;color:var(--ink);text-decoration:none;line-height:1.2;}
+.logo em{font-style:normal;color:var(--pri-mid);}
+
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--sinyal);color:#fff;text-decoration:none;
+  font-weight:800;font-size:17px;letter-spacing:-0.01em;
+  padding:17px 28px;border-radius:12px;border:none;cursor:pointer;
+  box-shadow:0 3px 0 var(--sinyal-deep);
+  transition:transform .12s ease,box-shadow .12s ease,background .12s ease;
+  text-align:center;width:100%;
+}
+@media(min-width:560px){.btn{width:auto;font-size:18px;padding:18px 34px;}}
+.btn:hover{background:#1D6B76;transform:translateY(-1px);box-shadow:0 4px 0 var(--sinyal-deep);}
+.btn:active{transform:translateY(2px);box-shadow:0 1px 0 var(--sinyal-deep);}
+.btn:focus-visible{outline:3px solid var(--pri-mid);outline-offset:3px;}
+.sec-deep .btn{background:var(--sinyal);color:#fff;box-shadow:0 3px 0 #120A16;}
+.sec-deep .btn:hover{background:#1D6B76;}
+.btn-note{font-size:14.5px;color:var(--muted);margin-top:12px;}
+.sec-deep .btn-note{color:#C8B5D0;}
+.cta-block{margin-top:26px;}
+
+/* hero */
+.hero{background:var(--card);padding:28px 0 44px;border-bottom:1px solid var(--line);}
+.hero-grid{display:block;}
+.hero-img{margin:22px -20px 24px;}
+@media(min-width:900px){
+  .hero{padding:64px 0 72px;}
+  .hero-grid{display:grid;grid-template-columns:1fr 460px;grid-template-areas:"hd img" "rest img";column-gap:56px;align-items:center;}
+  .hero-hd{grid-area:hd;align-self:end;}
+  .hero-rest{grid-area:rest;align-self:start;padding-top:18px;}
+  .hero-img{grid-area:img;margin:0;align-self:center;}
+  .hero-img img{border-radius:var(--radius-lg);}
+}
+.hero-bullets{list-style:none;padding:0;margin:22px 0 0;}
+.hero-bullets li{position:relative;padding-left:30px;margin-bottom:12px;font-size:16.5px;color:var(--ink);}
+.hero-bullets li::before{content:"";position:absolute;left:0;top:8px;width:16px;height:16px;border-radius:50%;background:var(--pri-soft);border:2px solid var(--pri-mid);}
+.hero-bullets b{color:var(--pri);}
+.hero-facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:20px;font-size:14.5px;color:var(--muted);font-weight:600;}
+.hero-facts span{white-space:nowrap;}
+
+/* cards */
+.grid{display:grid;gap:18px;}
+@media(min-width:760px){.grid-3{grid-template-columns:repeat(3,1fr);}}
+@media(min-width:640px){.grid-2{grid-template-columns:repeat(2,1fr);}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;}
+.sec-alt .card{background:var(--bg);}
+.card-quote{font-size:20px;font-weight:800;color:var(--bara);margin:0 0 10px;line-height:1.3;letter-spacing:-0.01em;}
+.card p{font-size:16px;color:var(--muted);}
+.card h3{margin-bottom:10px;}
+
+.pilar{border-left:4px solid var(--pri-mid);padding:4px 0 4px 18px;margin-bottom:20px;}
+.pilar.p-anak{border-color:#7DB283;}
+.pilar.p-ortu{border-color:var(--madu);}
+.pilar.p-darurat{border-color:var(--bara);}
+.pilar h4{margin-bottom:4px;color:var(--pri);}
+.pilar p{font-size:16px;color:var(--muted);margin:0;}
+.pilar p b{color:var(--pri);}
+.golden{margin-top:28px;font-size:25px;font-weight:800;color:var(--pri);margin-bottom:6px;line-height:1.3;letter-spacing:-0.02em;}
+
+/* steps */
+.step{display:grid;gap:20px;padding:28px 0;border-top:1px solid var(--line);}
+.narrow + .step{border-top:none;}
+@media(min-width:1024px){
+  .step.dimg{grid-template-columns:1fr 1.45fr;gap:48px;align-items:center;}
+  .step-img{order:2;}
+}
+.step-num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--pri-mid);color:#fff;font-weight:800;font-size:16px;margin-bottom:12px;}
+.step-copy p{color:var(--muted);margin-top:10px;}
+.step-wide{display:block;}
+.step-wide .step-copy{max-width:var(--maxw-text);}
+
+/* screenshot frames */
+.shot{border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:0 1px 3px rgba(78,53,88,.08);}
+.shot-r{max-width:300px;width:100%;margin-left:auto;margin-right:auto;}
+@media(min-width:1024px){.shot-r{max-width:100%;}}
+[data-zoom]{cursor:zoom-in;}
+.m-only{display:inline;}
+@media(min-width:700px){.m-only{display:none;}}
+figure{margin:0;}
+figcaption{font-size:13.5px;color:var(--muted);margin-top:8px;text-align:center;}
+
+/* feature rows */
+.feat{display:grid;gap:24px;padding:40px 0;border-top:1px solid var(--line);}
+@media(min-width:1024px){
+  .feat.dimg{grid-template-columns:1fr 1.45fr;gap:48px;align-items:center;}
+  .feat.dimg.flip{grid-template-columns:1.45fr 1fr;}
+  .feat-img{order:2;}
+  .feat.flip .feat-img{order:1;}
+  .feat.flip .feat-copy{order:2;}
+}
+.feat-copy h3{margin-bottom:12px;}
+.feat-copy p{color:var(--muted);font-size:16.5px;}
+.feat-pair{padding-top:40px;border-top:1px solid var(--line);}
+
+/* alat */
+.alat-tabs{display:none;}
+.alat-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:4px 20px 6px;margin:0 -20px;}
+.alat-track::-webkit-scrollbar{display:none;}
+.alat-item{flex:0 0 80%;scroll-snap-align:center;}
+.alat-item h3{font-size:19px;margin:16px 0 6px;}
+.alat-item p{font-size:15.5px;color:var(--muted);margin:0;}
+.alat-dots{display:flex;justify-content:center;gap:8px;margin-top:18px;}
+.alat-dots button,.testi-dots button{width:8px;height:8px;padding:0;border:none;border-radius:50%;background:var(--line);cursor:pointer;transition:background .2s ease,width .2s ease;}
+.alat-dots button.on,.testi-dots button.on{background:var(--pri-mid);width:22px;border-radius:5px;}
+.alat-dots button:focus-visible,.testi-dots button:focus-visible{outline:2px solid var(--pri-mid);outline-offset:3px;}
+@media(min-width:1024px){
+  .alat-tabs{display:flex;justify-content:center;gap:8px;margin-bottom:26px;flex-wrap:wrap;}
+  .alat-tabs button{font:inherit;font-size:15.5px;font-weight:700;color:var(--pri);background:var(--card);border:1.5px solid var(--line);border-radius:999px;padding:10px 20px;cursor:pointer;}
+  .alat-tabs button[aria-selected="true"]{background:var(--pri-mid);border-color:var(--pri-mid);color:#fff;}
+  .alat-tabs button:focus-visible{outline:3px solid var(--madu);outline-offset:2px;}
+  .alat-track{display:block;overflow:visible;padding:0;margin:0;}
+  .alat-item{display:none;}
+  .alat-item.on{display:grid;grid-template-columns:1.6fr 1fr;gap:40px;align-items:center;}
+  .alat-item h3{font-size:24px;margin:0 0 10px;}
+  .alat-item p{font-size:16.5px;}
+  .alat-dots{display:none;}
+}
+.also{max-width:var(--maxw-text);margin:34px auto 0;text-align:center;font-size:16px;color:var(--muted);}
+
+/* jelas */
+.clear-card p{color:var(--muted);font-size:16.5px;}
+.clear-yes{border-top:4px solid var(--pri-mid);}
+.clear-no{border-top:4px solid var(--madu);}
+
+.fitlist{list-style:none;padding:0;margin:0;}
+.fitlist li{position:relative;padding-left:30px;margin-bottom:13px;font-size:16.5px;}
+.fitlist li::before{position:absolute;left:0;top:0;font-weight:800;font-size:17px;}
+.fit-yes li::before{content:"✓";color:var(--pri-mid);}
+.fit-no li::before{content:"✕";color:var(--bara);}
+
+/* table */
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;border:1px solid var(--line);border-radius:var(--radius);}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:15.5px;background:var(--card);}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:none;}
+thead th{font-size:13.5px;font-weight:700;color:var(--muted);border-bottom:2px solid var(--line);}
+thead th.hl{color:var(--pri);}
+tbody td.hl{font-weight:700;color:var(--pri);background:var(--pri-soft);}
+tbody th{font-weight:600;color:var(--ink);width:19%;}
+
+/* testimoni */
+.testi-grid{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:4px 20px 6px;margin:0 -20px;}
+.testi-grid::-webkit-scrollbar{display:none;}
+.testi-grid img{flex:0 0 78%;scroll-snap-align:center;width:100%;height:auto;border:1px solid var(--line);border-radius:16px;background:var(--card);box-shadow:0 1px 3px rgba(78,53,88,.08);}
+.testi-dots{display:flex;justify-content:center;gap:8px;margin-top:16px;}
+@media(min-width:700px){
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;overflow:visible;padding:0;margin:0;}
+  .testi-grid img{flex:none;}
+  .testi-dots{display:none;}
+}
+
+/* nilai (naratif) */
+.story{max-width:var(--maxw-text);margin:0 auto 34px;}
+.story p{font-size:clamp(17px,2vw,18.5px);color:var(--muted);}
+.story p.punch{font-size:clamp(19px,2.4vw,22px);font-weight:700;color:var(--pri);line-height:1.45;margin-top:22px;}
+.price-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:26px 22px;max-width:620px;margin:0 auto;}
+.sec-alt .price-card{background:var(--bg);}
+@media(min-width:640px){.price-card{padding:36px;}}
+.incl{list-style:none;padding:0;margin:18px 0 0;}
+.incl li{position:relative;padding:10px 0 10px 30px;border-bottom:1px solid var(--line-soft);font-size:16px;}
+.incl li:last-child{border-bottom:none;}
+.incl li::before{content:"✓";position:absolute;left:0;top:10px;font-weight:800;color:var(--pri-mid);}
+.once-box{text-align:center;background:var(--madu-soft);border-radius:var(--radius);padding:18px 20px;margin:24px 0 0;font-size:16.5px;color:var(--ink);}
+.once-box b{display:block;font-size:19px;color:var(--pri);margin-bottom:2px;}
+
+.flow{max-width:620px;margin:40px auto 0;}
+.flow h3{text-align:center;margin-bottom:18px;font-size:clamp(19px,2.4vw,22px);}
+.flow ol{list-style:none;padding:0;margin:0;counter-reset:f;}
+.flow li{counter-increment:f;position:relative;padding:0 0 18px 48px;font-size:16px;color:var(--muted);}
+.flow li:last-child{padding-bottom:0;}
+.flow li::before{content:counter(f);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--pri-soft);color:var(--pri);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:15px;}
+.flow li b{display:block;color:var(--pri);font-size:16.5px;}
+
+/* faq */
+.faq-key{background:var(--card);border:3px solid var(--madu);border-radius:var(--radius);padding:22px;margin-bottom:16px;}
+.faq-key h3{font-size:clamp(20px,3.2vw,23px);margin-bottom:12px;}
+.faq-key p{font-size:17.5px;color:var(--muted);margin:0 0 10px;}
+.faq-key ol{margin:0;padding:0 0 0 24px;font-size:clamp(17.5px,2.6vw,19px);line-height:1.5;}
+.faq-key li{margin-bottom:10px;padding-left:4px;}
+.faq-key li:last-child{margin-bottom:0;}
+.faq-key li::marker{font-weight:800;color:var(--madu-text);}
+.faq-key b{color:var(--pri);}
+.faq{border-top:1px solid var(--line);margin-top:30px;}
+.faq details{border-bottom:1px solid var(--line);}
+.faq summary{cursor:pointer;padding:18px 34px 18px 0;position:relative;font-weight:700;font-size:16.5px;color:var(--pri);list-style:none;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"";position:absolute;right:6px;top:26px;width:9px;height:9px;border-right:2.5px solid var(--pri-mid);border-bottom:2.5px solid var(--pri-mid);transform:rotate(45deg);transition:transform .18s ease;}
+.faq details[open] summary::after{transform:rotate(-135deg);top:28px;}
+.faq summary:focus-visible{outline:2px solid var(--pri-mid);outline-offset:2px;}
+.faq .ans{padding:0 0 20px;color:var(--muted);font-size:16.5px;}
+
+.closing-line{font-size:25px;font-weight:800;color:#fff;margin-top:24px;line-height:1.3;letter-spacing:-0.02em;}
+
+/* sticky bar */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--card);border-top:1px solid var(--line);padding:10px 16px;box-shadow:0 -3px 14px rgba(78,53,88,.12);display:flex;align-items:center;gap:12px;transform:translateY(110%);transition:transform .25s ease;}
+.sticky-cta.on{transform:translateY(0);}
+.sticky-cta .sp{flex:1;min-width:0;}
+.sticky-cta .sp b{display:block;font-size:16.5px;color:var(--pri);line-height:1.2;}
+.sticky-cta .sp small{font-size:12.5px;color:var(--muted);}
+.sticky-cta .btn{width:auto;padding:14px 22px;font-size:15.5px;flex-shrink:0;}
+@media(min-width:900px){.sticky-cta{display:none;}}
+body.has-sticky{padding-bottom:82px;}
+@media(min-width:900px){body.has-sticky{padding-bottom:0;}}
+
+/* footer */
+.site-foot{background:var(--card);border-top:1px solid var(--line);padding:30px 0;text-align:center;}
+.site-foot .logo{display:block;margin-bottom:6px;}
+.site-foot small{font-size:13.5px;color:var(--muted-light);}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(27,22,34,.92);display:none;align-items:center;justify-content:center;padding:56px 12px 20px;}
+.lb.on{display:flex;}
+.lb-inner{max-width:1400px;width:100%;max-height:100%;overflow:auto;-webkit-overflow-scrolling:touch;border-radius:10px;}
+.lb img{width:auto;max-width:100%;max-height:86vh;margin:0 auto;border-radius:10px;}
+.lb-close{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;background:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.lb-close:focus-visible{outline:3px solid var(--madu);outline-offset:2px;}
+.lb-close svg{width:18px;height:18px;}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}
+.pilar.pl-m1{border-color:#E3A48F;}
+.pilar.pl-m2{border-color:#237A86;}
+.pilar.pl-m3{border-color:#8A6A9A;}
+.pilar.pl-m4{border-color:#E9B85C;}
+.pilar.pl-m5{border-color:#7FC4CC;}
+.pilar.pl-m6{border-color:#4E3558;}
+.eyebrow-pagi{color:#B26A50;}
+.eyebrow-latihan{color:#1F6E79;}
+.eyebrow-malam{color:#6A4A78;}
+.note-tbl{max-width:var(--maxw-text);margin:22px auto 0;text-align:center;font-size:15.5px;color:var(--muted);}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Pulih AI, halaman utama">Pulih <em>AI</em></a>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-hd">
+        <h1>Bukan kamu yang rusak. Lukamu cuma belum diolah.</h1>
+      </div>
+      <div class="hero-img">
+        <img src="img/hero-mockup.webp" alt="Pulih AI: pelan-pelan, kamu bisa pulih lagi. 42 hari menata hati dengan Bacaan Harian, Latihan Pulih, dan Teman Malam" width="1122" height="1402" fetchpriority="high">
+      </div>
+      <div class="hero-rest">
+        <p class="lead">Semua orang nyuruh sabar. Tapi tiap malam kejadiannya muter lagi di kepala, dan jam segitu nggak ada yang bisa diajak cerita. Pulih AI adalah pendamping 6 minggu di HP untuk perempuan yang diselingkuhi. Tiap pagi satu bacaan pendek dan satu latihan 5 menit, disusun dari konsep psikologi yang biasa dipakai untuk luka pengkhianatan. Tiap malam yang berat ada Teman Malam dan Tombol Ombak.</p>
+        <ul class="hero-bullets">
+          <li><b>Jam 2 pagi pengin labrak dia?</b> Tekan Tombol Ombak. 20 menit dituntun napas sampai dorongannya turun sendiri.</li>
+          <li><b>Malu cerita ke orang?</b> Teman Malam bisa diajak cerita kapan saja. Semua tersimpan di HP kamu, nggak dikirim ke mana-mana.</li>
+          <li><b>Nggak tahu mulai dari mana?</b> Cek Titik Mulai 10 pertanyaan, lalu app menyusun 42 harinya. Kamu tinggal buka tiap pagi.</li>
+        </ul>
+        <div class="cta-block">
+          <a class="btn" href="checkout.html">Mulai Bacaan Hari Ini →</a>
+          <p class="btn-note">Dibuka dari browser HP atau laptop. Tanpa install, tanpa akun.</p>
+        </div>
+        <div class="hero-facts">
+          <span>6 minggu</span>
+          <span>5 menit sehari</span>
+          <span>Ada jam 2 pagi</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ADEGAN -->
+<section>
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:34px;">
+      <h2>Baca tiga ini. Kalau ada satu yang kejadian minggu ini, kamu di tempat yang benar.</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <p class="card-quote">“Kunci motor udah di tangan.”</p>
+        <p>Jam dua pagi, HP-nya bunyi lagi, dan namanya muncul lagi. Kamu udah pakai jaket. Kamu tahu alamatnya. Yang menahanmu cuma tangan yang gemetaran.</p>
+      </div>
+      <div class="card">
+        <p class="card-quote">“Satu checkout lagi, buat hiburan.”</p>
+        <p>Tadinya satu barang. Sekarang paket numpuk di teras dan tagihan paylater datang tiap bulan. Bukan karena butuh, tapi karena cuma itu yang bikin malam terasa lebih pendek.</p>
+      </div>
+      <div class="card">
+        <p class="card-quote">“Sabar, namanya juga laki-laki.”</p>
+        <p>Itu kata ibumu. Keluarga minta kamu bertahan demi anak dan diam supaya nggak ada yang tahu. Lama-lama kamu mulai percaya, mungkin memang kamu yang salah.</p>
+      </div>
+    </div>
+    <p class="narrow lead center" style="margin-top:30px;">Tiga adegan ini kelihatan beda. Akarnya sama, dan bukan karena kamu lemah atau kurang sabar.</p>
+  </div>
+</section>
+
+<!-- MEKANISME -->
+<section class="sec-alt">
+  <div class="wrap">
+    <div class="narrow">
+      <h2>Sakit kayak gini nggak bisa disabarin. Harus diolah, sedikit-sedikit, tiap hari.</h2>
+      <p style="margin-top:18px;">Waktu yang menyakiti justru orang yang paling dekat, otak kehilangan tempat amannya. Makanya rasanya kayak dipukul dari dalam rumah sendiri. Kejadiannya terus diputar ulang, dorongannya datang seperti ombak, dan lubangnya ditambal pakai apa saja yang ada di tangan: belanja, mengintip akun dia, begadang. Nasihat "sabar" nggak salah, cuma nggak ngasih tahu caranya.</p>
+      <p>Pulih AI memakai <b>Metode Pulih 6 Minggu</b>: satu tema per minggu, satu langkah kecil per hari.</p>
+
+      <div style="margin-top:26px;">
+        <div class="pilar pl-m1"><h4>Minggu 1 · Tempat Aman</h4><p>Kenapa dikhianati orang dekat lebih sakit, dan menstabilkan tidur.</p></div>
+        <div class="pilar pl-m2"><h4>Minggu 2 · Ombak</h4><p>Marah dan dorongan melabrak itu naik, sampai puncak, lalu turun.</p></div>
+        <div class="pilar pl-m3"><h4>Minggu 3 · Duka yang Belum Keluar</h4><p>Surat yang tidak dikirim, dan boleh menangis.</p></div>
+        <div class="pilar pl-m4"><h4>Minggu 4 · Berhenti Menambal</h4><p>Belanja malam dan mengintip media sosial.</p></div>
+        <div class="pilar pl-m5"><h4>Minggu 5 · Kembali ke Diriku</h4><p>Hal-hal yang dulu kamu sukai, pelan-pelan dipakai lagi.</p></div>
+        <div class="pilar pl-m6"><h4>Minggu 6 · Utuh Lagi</h4><p>Batas, bicara dengan anak, dan rencana sesudahnya.</p></div>
+      </div>
+
+      <p style="margin-top:26px;"><b>Cek Titik Mulai</b> di awal mencatat keadaanmu: masih serumah, sudah pisah, atau baru tahu. Cek ini juga mencatat seberapa berat tidur, marah, sedih, dan dorongan malammu. Tiap akhir minggu ada cek singkat 1 menit, supaya kamu bisa lihat sendiri apa yang bergerak.</p>
+    </div>
+
+    <div class="feat dimg" style="border-top:none;padding-bottom:10px;">
+      <div class="feat-copy">
+        <p class="eyebrow">Peta Pulih</p>
+        <h3>Tahu dari catatanmu sendiri, bukan dari perasaan.</h3>
+        <p style="margin-top:12px;">Peta 42 hari menunjukkan bacaan dan latihan yang sudah selesai. Di bawahnya ada perbandingan titik mulai dengan minggu ini, jumlah ombak yang berhasil dilewati, dan malam bersih.</p>
+        <p>Ini catatan pribadimu, bukan skor kesehatan mental. Kalau dua minggu berturut-turut terasa makin berat, app menyarankan bicara dengan psikolog.</p>
+      </div>
+      <div class="feat-img">
+        <picture><source media="(min-width:1024px)" srcset="img/peta-pulih-d.webp" width="1400" height="875"><img class="shot shot-r" data-zoom src="img/peta-pulih.webp" alt="Layar Peta Pulih: hari ke-22 dari 42, hari 1 sampai 21 bacaan dan latihan selesai, sisanya belum terbuka" width="728" height="1575" loading="lazy"></picture>
+      </div>
+    </div>
+
+    <div class="narrow">
+      <p class="golden">Targetnya bukan cepat lupa. Targetnya lukanya diolah, sedikit, tiap pagi.</p>
+      <p style="color:var(--muted);">Aturan yang dijaga app: satu bacaan per hari. Hari berikutnya baru terbuka besok pagi, jadi kamu nggak menelan semuanya sekaligus lalu berhenti. Bolong beberapa hari? Kamu lanjut dari hari ini, tanpa rasa bersalah.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CARA KERJA -->
+<section>
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:10px;">
+      <h2>Kamu nggak perlu kuat dulu untuk mulai. App-nya yang nuntun.</h2>
+    </div>
+
+    <div class="step step-wide">
+      <div class="step-copy">
+        <div class="step-num">1</div>
+        <h3>Masukkan kode akses</h3>
+        <p>Kodenya ada di Panduan Akses di emailmu. Cukup sekali, setelah itu tersimpan.</p>
+      </div>
+    </div>
+
+    <div class="step dimg">
+      <div class="step-copy">
+        <div class="step-num">2</div>
+        <h3>Cek Titik Mulai, sekitar 3 menit</h3>
+        <p>Sepuluh pertanyaan singkat, satu per layar. Di akhir ada tiga pertanyaan keselamatan untuk menjagamu. Hasilnya ringkasan titik mulaimu: apa yang paling berat sekarang, dan bacaan apa yang menunggumu besok pagi.</p>
+      </div>
+      <div class="step-img">
+        <picture><source media="(min-width:1024px)" srcset="img/titik-mulai-d.webp" width="1400" height="875"><img class="shot shot-r" data-zoom src="img/titik-mulai.webp" alt="Layar Ini titik mulaimu: masih serumah dengannya, dan dia orang dekat, dengan saran memakai Tombol Ombak saat dorongan melabrak datang" width="728" height="1575" loading="lazy"></picture>
+      </div>
+    </div>
+
+    <div class="step step-wide">
+      <div class="step-copy">
+        <div class="step-num">3</div>
+        <h3>Pilih jam pagimu</h3>
+        <p>Pilih jam ketika kamu bisa sendirian 10 menit. Mau diingatkan? Tekan Pasang pengingat di kalender HP. Judul pengingatnya netral: "Waktu untuk diriku". Bacaan pertamamu langsung terbuka.</p>
+      </div>
+    </div>
+
+    <div class="cta-block narrow center" style="margin-top:34px;">
+      <a class="btn" href="checkout.html">Mulai Bacaan Hari Ini →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FITUR -->
+<section class="sec-alt">
+  <div class="wrap">
+    <div class="narrow center">
+      <h2>Yang kamu pakai tiap hari</h2>
+    </div>
+
+    <div class="feat dimg" style="border-top:none;">
+      <div class="feat-copy">
+        <p class="eyebrow eyebrow-pagi">Bacaan Pagi</p>
+        <h3>Sebelum ngapa-ngapain, dua menit buat dirimu.</h3>
+        <p style="margin-top:12px;">Satu bacaan pendek tiap pagi, 42 bacaan untuk 6 minggu. Bacaan pertama: kenapa dikhianati orang terdekat lebih sakit daripada dikhianati orang asing.</p>
+        <p>Tiap bacaan ditutup satu kalimat untuk dibawa hari itu. Yang paling kena bisa ditandai "Bacaan ini membantuku" dan dibaca ulang kapan saja.</p>
+      </div>
+      <div class="feat-img">
+        <picture><source media="(min-width:1024px)" srcset="img/bacaan-d.webp" width="1400" height="875"><img class="shot shot-r" data-zoom src="img/bacaan.webp" alt="Layar Bacaan Pagi hari 22, Berhenti Menambal: Lubang yang ingin ditambal, 2 menit baca" width="728" height="1575" loading="lazy"></picture>
+      </div>
+    </div>
+
+    <div class="feat dimg flip">
+      <div class="feat-copy">
+        <p class="eyebrow eyebrow-latihan">Latihan 5 Menit</p>
+        <h3>Bukan cuma dibaca. Dikerjakan.</h3>
+        <p style="margin-top:12px;">Tiap bacaan punya pasangan latihannya: napas terpandu, menulis bebas, menamai emosi, atau memetakan "tambalan" yang kamu pakai.</p>
+        <p>Ada catatan perasaan sebelum dan sesudah. Semua latihan bisa dihentikan kapan saja.</p>
+      </div>
+      <div class="feat-img">
+        <picture><source media="(min-width:1024px)" srcset="img/latihan-d.webp" width="1400" height="875"><img class="shot shot-r" data-zoom src="img/latihan.webp" alt="Layar Latihan 5 Menit Peta tambalanku: pilihan belanja online dan mengintip media sosial mereka tercentang" width="728" height="1575" loading="lazy"></picture>
+      </div>
+    </div>
+
+    <div class="feat dimg">
+      <div class="feat-copy">
+        <p class="eyebrow eyebrow-malam">Teman Malam</p>
+        <h3>Jam dua pagi, waktu nggak ada orang lain yang bangun.</h3>
+        <p style="margin-top:12px;">Pilih tombol yang paling dekat dengan malammu: "Aku pengin labrak dia sekarang", "Aku nggak bisa tidur", "Aku pengin buka IG-nya", "Aku pengin checkout sesuatu", "Aku cuma pengin nangis", dan lainnya. Atau ketik sendiri.</p>
+        <p>Teman Malam menuntun langkah demi langkah: menenangkan, satu pertanyaan, satu tindakan kecil, lalu menanyakan lagi perasaanmu.</p>
+        <p>Jujur dari awal: Teman Malam adalah teman cerita terpandu. Balasannya disusun dari alur pendampingan yang sudah disiapkan. Bukan chatbot, dan bukan psikolog.</p>
+      </div>
+      <div class="feat-img">
+        <picture><source media="(min-width:1024px)" srcset="img/teman-malam-d.webp" width="1400" height="875"><img class="shot shot-r" data-zoom src="img/teman-malam.webp" alt="Layar Teman Malam: balasan rasa ini kayak ombak, naik, sampai puncak, terus turun sendiri, lalu pertanyaan sekarang di tanganmu ada apa" width="728" height="1575" loading="lazy"></picture>
+      </div>
+    </div>
+
+    <div class="feat-pair">
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Ceritanya pribadi. App-nya juga.</h3>
+          <p>Tanpa akun dan password. Cerita, surat, dan catatanmu tersimpan di HP kamu, bukan di server kami. Masih serumah? Pasang PIN 4 digit di Pengaturan. Nama di layar HP tetap "Pulih AI".</p>
+        </div>
+        <div class="card">
+          <h3>Satu HP sudah cukup.</h3>
+          <p>Dibuka dari browser HP atau laptop. Huruf bisa dibesarkan. Malam hari tampilannya otomatis gelap, supaya nggak silau jam 2 pagi.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALAT -->
+<section>
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:30px;">
+      <h2>Dan alat untuk malam-malam yang paling berat.</h2>
+      <p class="lead" style="margin-top:12px;">Semuanya bisa dipakai kapan saja, nggak perlu nunggu harinya.<span class="m-only"> Geser untuk melihat yang lain.</span></p>
+    </div>
+
+    <div class="alat-tabs" role="tablist" aria-label="Pilih alat">
+      <button type="button" role="tab" id="tab-ombak" aria-controls="alat-ombak" aria-selected="true">Tombol Ombak</button>
+      <button type="button" role="tab" id="tab-catatan" aria-controls="alat-catatan" aria-selected="false" tabindex="-1">Catatan Malam</button>
+      <button type="button" role="tab" id="tab-diriku" aria-controls="alat-diriku" aria-selected="false" tabindex="-1">Diriku yang Dulu</button>
+    </div>
+
+    <div class="alat-track" id="alatTrack">
+      <div class="alat-item on" id="alat-ombak" role="tabpanel" aria-labelledby="tab-ombak">
+        <picture><source media="(min-width:1024px)" srcset="img/tombol-ombak-d.webp" width="1400" height="875"><img class="shot" data-zoom src="img/tombol-ombak.webp" alt="Layar Tombol Ombak: dorongannya lagi naik, kita lewati bareng dua puluh menit, pilihan dorongan dan skala 1 sampai 10" width="728" height="1575" loading="lazy"></picture>
+        <div>
+          <h3>Tombol Ombak</h3>
+          <p>Satu tombol yang selalu ada di pojok layar. Pilih dorongan yang datang (labrak, telepon, chat orang ketiganya), nilai seberapa kuat dari 1 sampai 10, lalu lewati 20 menit bareng visual ombak dan napas terpandu. Setiap ombak yang berhasil dilewati tercatat.</p>
+        </div>
+      </div>
+      <div class="alat-item" id="alat-catatan" role="tabpanel" aria-labelledby="tab-catatan">
+        <picture><source media="(min-width:1024px)" srcset="img/catatan-malam-d.webp" width="1400" height="875"><img class="shot" data-zoom src="img/catatan-malam.webp" alt="Layar Catatan Malam: satu ketuk tiap malam, membuka akun dia, belanja yang nggak direncanakan, menghubungi dia, semua dijawab Nggak" width="728" height="1575" loading="lazy"></picture>
+        <div>
+          <h3>Catatan Malam</h3>
+          <p>Satu ketuk tiap malam, jujur, tanpa nilai: buka akun dia? Belanja yang nggak direncanakan? Menghubungi dia? App menghitung malam bersih, menunjukkan jam rawanmu, dan menyediakan ceklis Langkah Putus.</p>
+        </div>
+      </div>
+      <div class="alat-item" id="alat-diriku" role="tabpanel" aria-labelledby="tab-diriku">
+        <picture><source media="(min-width:1024px)" srcset="img/diriku-d.webp" width="1400" height="875"><img class="shot" data-zoom src="img/diriku.webp" alt="Layar Diriku yang Dulu: hal yang dulu aku suka, senam pagi sama ibu-ibu kompleks, masak resep ibu, jalan pagi sendirian" width="728" height="1575" loading="lazy"></picture>
+        <div>
+          <h3>Diriku yang Dulu</h3>
+          <p>Tulis hal dan orang yang dulu kamu sukai sebelum kamu lupa sama dirimu sendiri. Mulai minggu ke-5, ada satu ajakan kecil tiap minggu.</p>
+        </div>
+      </div>
+    </div>
+    <div class="alat-dots" id="alatDots" aria-hidden="true">
+      <button type="button" class="on" data-i="0" aria-label="Alat 1"></button>
+      <button type="button" data-i="1" aria-label="Alat 2"></button>
+      <button type="button" data-i="2" aria-label="Alat 3"></button>
+    </div>
+
+    <p class="also">Juga ada Surat yang Tidak Dikirim (Simpan atau Lepaskan, tanpa tombol kirim), 5 lembar bonus siap cetak (Kartu Ombak, Kalimat Siap Pakai untuk Keluarga yang Bilang "Sabar", Ceklis Sebelum ke Psikolog, Jurnal Tidur 7 Malam, Cara Bicara ke Anak), Kartu Ombak sebagai wallpaper HP, Bantuan dan Rambu, dan Pindah Progres untuk ganti HP.</p>
+  </div>
+</section>
+
+<!-- SUPAYA JELAS -->
+<section class="sec-alt">
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:28px;">
+      <h2>Supaya jelas dari awal</h2>
+    </div>
+    <div class="grid grid-2">
+      <div class="card clear-card clear-yes">
+        <h3>Pulih AI bisa</h3>
+        <p>menemanimu 6 minggu dengan satu bacaan dan satu latihan tiap pagi, menuntunmu lewat malam yang berat lewat Teman Malam dan Tombol Ombak, menyimpan surat dan catatanmu secara pribadi, dan menunjukkan apa yang bergerak di Peta Pulih.</p>
+      </div>
+      <div class="card clear-card clear-no">
+        <h3>Pulih AI bukan</h3>
+        <p>pengganti psikolog atau psikiater, bukan chatbot yang membaca perasaanmu, dan bukan layanan darurat. App ini tidak menyuruhmu bertahan atau berpisah, tidak menjanjikan sembuh dalam 6 minggu, dan tidak menjanjikan dia kembali. Enam minggu adalah panjang programnya, bukan batas waktu untuk pulih.</p>
+        <p>Kalau muncul pikiran menyakiti diri, hampir nggak bisa tidur lebih dari dua minggu, nggak sanggup bekerja atau mengurus anak, atau ada kekerasan di rumah, segera cari bantuan profesional. App menampilkan Healing119 dan anjuran ke psikolog, puskesmas, atau rumah sakit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UNTUK SIAPA -->
+<section>
+  <div class="wrap">
+    <div class="grid grid-2">
+      <div class="card">
+        <h3 style="margin-bottom:16px;">Cocok kalau</h3>
+        <ul class="fitlist fit-yes">
+          <li>Kamu baru tahu dia selingkuh, dan kejadiannya terus diputar di kepala.</li>
+          <li>Kamu masih serumah dan diminta bertahan, atau sudah pisah dan masih berantakan.</li>
+          <li>Malam adalah jam paling berat: dorongan melabrak, mengintip, atau belanja.</li>
+          <li>Kamu malu bercerita ke orang, atau pernah ke psikolog sekali lalu nggak balik lagi.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:16px;">Bukan untuk kamu kalau</h3>
+        <ul class="fitlist fit-no">
+          <li>Kamu cari cara supaya dia kembali atau melupakan selingkuhannya.</li>
+          <li>Kamu mau semuanya hilang dalam semalam.</li>
+          <li>Kamu sedang dalam bahaya sekarang. Hubungi bantuan profesional dulu.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERBANDINGAN -->
+<section class="sec-alt">
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:28px;">
+      <h2>Kenapa app ini, bukan cara yang biasa dicoba.</h2>
+    </div>
+    <div class="tbl-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Dipendam sendiri</th>
+            <th>Artikel dan video gratis</th>
+            <th>Psikolog per sesi</th>
+            <th class="hl">Pulih AI</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th>Jam 2 pagi</th><td>Sendirian</td><td>Dibaca, lalu tetap melek</td><td>Sesi sudah selesai</td><td class="hl">Teman Malam dan Tombol Ombak</td></tr>
+          <tr><th>Saat dorongan datang</th><td>Ditahan sampai meledak</td><td>Ingat tipsnya, lupa praktiknya</td><td>Dibahas di sesi berikutnya</td><td class="hl">20 menit dituntun sampai turun</td></tr>
+          <tr><th>Langkah harian</th><td>Nggak ada</td><td>Daftar tips sekaligus</td><td>Tugas dari psikolog</td><td class="hl">Satu bacaan dan satu latihan tiap pagi</td></tr>
+          <tr><th>Melihat kemajuan</th><td>Pakai perasaan</td><td>Nggak ada</td><td>Lewat sesi</td><td class="hl">Peta Pulih dan cek mingguan</td></tr>
+          <tr><th>Biaya</th><td>Gratis, tapi lukanya tetap</td><td>Gratis</td><td>Rp59 ribu sampai Rp165 ribuan per sesi</td><td class="hl">Sekali bayar, tanpa langganan</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note-tbl">Pulih AI tidak menggantikan psikolog. App ini menemani jam-jam di antara sesi, dan Ceklis Sebelum ke Psikolog membantu satu jam sesimu nggak habis tanpa arah.</p>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section>
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:28px;">
+      <h2>Cerita dari yang sudah pakai.</h2>
+      <p class="lead" style="margin-top:12px;"><span class="m-only">Geser untuk melihat cerita lainnya. </span>Nomor disensor untuk menjaga privasi.</p>
+    </div>
+    <div class="testi-grid">
+      <img src="img/testi1.webp" alt="Screenshot WhatsApp: suami pulang, HP-nya bunyi dengan nama perempuan itu lagi, sudah ambil kunci motor mau datang malam itu juga, lalu ingat app dan mengetik di Teman Malam aku pengin labrak dia sekarang" width="748" height="1564" loading="lazy">
+      <img src="img/testi2.webp" alt="Screenshot WhatsApp: dulu tiap jam 12 ke atas scroll toko oren sampai paket numpuk di teras, lalu saat jempol sudah di tombol bayar flash sale, buka Pulih AI dan pilih aku pengin checkout sesuatu" width="748" height="1564" loading="lazy">
+      <img src="img/testi3.webp" alt="Screenshot WhatsApp: dulu suka menjahit, sejak menikah mesinnya masuk gudang, ajakan minggu ini di app mengajak versi paling kecil dari menjahit, lalu bikin sarung bantal dan seperti mendengar suara lama" width="748" height="1564" loading="lazy">
+    </div>
+    <div class="testi-dots" id="testiDots" aria-hidden="true">
+      <button type="button" class="on" data-i="0" aria-label="Testimoni 1"></button>
+      <button type="button" data-i="1" aria-label="Testimoni 2"></button>
+      <button type="button" data-i="2" aria-label="Testimoni 3"></button>
+    </div>
+  </div>
+</section>
+
+<!-- NILAI (NARATIF, TANPA HARGA) -->
+<section class="sec-alt">
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:24px;">
+      <h2>Berapa yang sudah keluar selama ini?</h2>
+    </div>
+    <div class="story">
+      <p>Coba ingat apa saja yang sudah keluar sejak hari itu. Tagihan paylater dari checkout tengah malam. Baju baru, potong rambut, nail art yang cuma menghibur sehari. Jam tidur yang hilang karena memutar ulang kejadiannya. Satu sesi psikolog yang habis buat nangis, lalu malu untuk kembali.</p>
+      <p>Konsultasi psikolog online biasanya sekitar enam puluh sampai seratus enam puluh ribuan per sesi. Sesi itu tetap penting, tapi cuma satu jam, sementara malamnya panjang.</p>
+      <p class="punch">Pulih AI sekali bayar, tanpa langganan, dan harganya jauh di bawah dua kali sesi konsultasi. Angkanya ada di halaman berikutnya.</p>
+    </div>
+
+    <div class="price-card">
+      <h3 class="center">Yang kamu dapat begitu masuk</h3>
+      <ul class="incl">
+        <li>Cek Titik Mulai dan ringkasan titik mulaimu</li>
+        <li>42 Bacaan Pagi untuk 6 minggu</li>
+        <li>42 Latihan 5 Menit dengan catatan perasaan sebelum dan sesudah</li>
+        <li>Teman Malam: 8 alur cerita terpandu dan tombol "Aku nggak aman sekarang"</li>
+        <li>Tombol Ombak 20 menit</li>
+        <li>Surat yang Tidak Dikirim</li>
+        <li>Catatan Malam dan ceklis Langkah Putus</li>
+        <li>Diriku yang Dulu</li>
+        <li>Peta Pulih dan cek mingguan</li>
+        <li>5 lembar bonus cetak dan wallpaper Kartu Ombak</li>
+        <li>Pengingat kalender, PIN privasi, mode malam, dan Pindah Progres</li>
+      </ul>
+      <div class="once-box">
+        <b>Sekali bayar, tanpa langganan.</b>
+        Semua fitur langsung terbuka, tanpa paket basic dan premium.
+      </div>
+      <div class="cta-block center">
+        <a class="btn" href="checkout.html">Mulai Bacaan Hari Ini →</a>
+        <p class="btn-note">Panduan Akses berisi kode masuk dikirim ke email yang kamu pakai saat order.</p>
+      </div>
+    </div>
+
+    <div class="flow">
+      <h3>Dari bayar sampai bacaan pertama, tiga langkah.</h3>
+      <ol>
+        <li><b>Selesaikan pembayaran</b>Bisa pakai QRIS, transfer bank, atau e-wallet.</li>
+        <li><b>Buka email, klik link biru</b>Klik link biru yang diawali drive.google.com, bukan tombol “Unduh Produk”. Kalau belum ada di kotak masuk, cek folder Spam atau Promosi.</li>
+        <li><b>Masukkan kode, lalu mulai</b>Buka pulihai.netlify.app, masukkan kode, jawab Cek Titik Mulai, lalu baca bacaan pertamamu.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <div class="narrow">
+      <h2 class="center" style="margin-bottom:26px;">Pertanyaan yang sering masuk</h2>
+      <div class="faq-key">
+        <h3>Aku sudah bayar. Kodenya di mana?</h3>
+        <ol>
+          <li>Buka email pembelianmu.</li>
+          <li>Klik <b>link biru yang diawali drive.google.com</b>.</li>
+          <li>PDF Panduan Akses terbuka. Kodenya ada di dalamnya.</li>
+        </ol>
+      </div>
+
+      <div class="faq-key">
+        <h3>Aku sudah klik &quot;Unduh Produk&quot;, tapi nggak ada kodenya.</h3>
+        <p>Nggak apa-apa, kamu cuma salah klik. Balik ke email yang sama, lalu:</p>
+        <ol>
+          <li>Cari <b>link biru yang diawali drive.google.com</b>. Letaknya di atas tombol Unduh Produk.</li>
+          <li>Klik link itu, bukan tombolnya.</li>
+          <li>Kodenya ada di PDF Panduan Akses yang terbuka.</li>
+        </ol>
+      </div>
+
+      <div class="faq">
+        <details><summary>Kodenya ditolak.</summary><div class="ans">Pastikan kamu membuka pulihai.netlify.app, lalu ketik atau salin kode dari Panduan Akses apa adanya. Huruf besar kecil dan spasi yang ikut tersalin nggak masalah. Masih ditolak? Balas email pembelianmu.</div></details>
+        <details><summary>Harganya berapa?</summary><div class="ans">Harganya tertera di halaman pembayaran setelah kamu klik tombol Mulai. Sekali bayar, tanpa biaya bulanan, dan semua fitur langsung terbuka.</div></details>
+        <details><summary>Ini AI yang bisa ngobrol bebas?</summary><div class="ans">Bukan. Teman Malam adalah teman cerita terpandu. Kamu memilih tombol atau mengetik, lalu balasannya dipilih dari alur pendampingan yang sudah disusun. Kalau ketikanmu nggak cocok dengan alur mana pun, Teman Malam akan jujur dan menawarkan alur yang paling dekat.</div></details>
+        <details><summary>Apa ini pengganti psikolog?</summary><div class="ans">Bukan. Pulih AI menemanimu di jam-jam di antara sesi. Kalau terasa terlalu berat, tombol Bantuan selalu ada di pojok atas.</div></details>
+        <details><summary>Ini app yang harus di-install?</summary><div class="ans">Nggak. Pulih AI dibuka lewat browser di HP atau laptop. Supaya cepat dibuka, simpan ke layar utama HP seperti app biasa.</div></details>
+        <details><summary>Perlu bikin akun atau password?</summary><div class="ans">Nggak. Cukup satu kode akses.</div></details>
+        <details><summary>Aku masih serumah. Kalau dia buka HP-ku?</summary><div class="ans">Pasang PIN 4 digit di Pengaturan. Nama di layar utama HP tetap "Pulih AI", dan pengingat kalendernya berjudul "Waktu untuk diriku".</div></details>
+        <details><summary>Ceritaku aman?</summary><div class="ans">Cerita, surat, dan catatanmu tersimpan di HP kamu, bukan di server kami.</div></details>
+        <details><summary>Kalau ganti HP, progresnya ikut?</summary><div class="ans">Bisa. Buka Pindah Progres di menu Lainnya dan salin kodenya. Di HP baru, masukkan kode akses yang sama, lalu tempel kode Pindah Progres tadi.</div></details>
+        <details><summary>Berapa lama sehari?</summary><div class="ans">Sekitar 5 sampai 10 menit di pagi hari. Teman Malam dan Tombol Ombak dipakai hanya saat perlu.</div></details>
+        <details><summary>Aku nggak mau disuruh bertahan, atau disuruh cerai.</summary><div class="ans">App ini netral. Isinya tentang memulihkan dirimu, apa pun keputusanmu soal pernikahan.</div></details>
+        <details><summary>Kalau bolong beberapa hari?</summary><div class="ans">Nggak apa-apa. Kamu lanjut dari hari ini, tanpa mulai dari awal dan tanpa rasa bersalah.</div></details>
+        <details><summary>Ada kejadian baru, misalnya ketemu dia lagi?</summary><div class="ans">Di Peta Pulih ada Ulang dari minggu tertentu. Kamu bisa mulai lagi dari minggu yang paling kamu butuhkan.</div></details>
+        <details><summary>Setelah 6 minggu, terus gimana?</summary><div class="ans">Semua bacaan bisa dibaca ulang. Teman Malam dan Tombol Ombak tetap ada untuk malam-malam yang berat.</div></details>
+        <details><summary>Ada biaya bulanan?</summary><div class="ans">Nggak ada. Sekali bayar.</div></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="sec-deep">
+  <div class="wrap">
+    <div class="narrow center">
+      <h2>Malam ini cukup mulai dari satu bacaan.</h2>
+      <p class="lead" style="margin-top:20px;">Kamu sudah coba sabar, coba diam, coba sibuk, coba belanja. Satu hal yang belum: mengolah lukanya sedikit tiap pagi, dengan sesuatu yang menemanimu juga jam dua pagi.</p>
+      <p class="closing-line">Kamu nggak rusak. Kamu cuma kelamaan sendirian menghadapi ini.</p>
+      <div class="cta-block">
+        <a class="btn" href="checkout.html">Mulai Bacaan Hari Ini →</a>
+        <p class="btn-note">Dibuka dari browser HP atau laptop. Tanpa install, tanpa akun.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <a class="logo" href="index.html">Pulih <em>AI</em></a>
+    <small>© 2026 Pulih AI. Semua hak dilindungi.</small>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <div class="sp">
+    <b>Pendamping 6 minggu</b>
+    <small>Buka dari HP, tanpa install</small>
+  </div>
+  <a class="btn" href="checkout.html">Mulai</a>
+</div>
+
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Tampilan app diperbesar">
+  <button type="button" class="lb-close" id="lbClose" aria-label="Tutup gambar">
+    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" stroke="#2A2230" stroke-width="1.8" stroke-linecap="round"/></svg>
+  </button>
+  <div class="lb-inner"><img id="lbImg" alt=""></div>
+</div>
+
+<script>
+(function(){
+  var bar=document.getElementById('stickyCta');
+  var hero=document.querySelector('.hero');
+  if(!bar||!hero)return;
+  document.body.classList.add('has-sticky');
+  function check(){bar.classList.toggle('on',hero.getBoundingClientRect().bottom<0);}
+  check();
+  window.addEventListener('scroll',check,{passive:true});
+  window.addEventListener('resize',check);
+})();
+
+/* geser + titik untuk testimoni dan alat (HP) */
+function scroller(trackSel,itemSel,dotsId){
+  var track=document.querySelector(trackSel),dots=document.getElementById(dotsId);
+  if(!track||!dots)return;
+  var slides=track.querySelectorAll(itemSel),btns=dots.querySelectorAll('button');
+  function active(){
+    var mid=track.scrollLeft+track.clientWidth/2,best=0,min=Infinity;
+    for(var i=0;i<slides.length;i++){
+      var c=slides[i].offsetLeft+slides[i].offsetWidth/2,d=Math.abs(c-mid);
+      if(d<min){min=d;best=i;}
+    }
+    for(var j=0;j<btns.length;j++)btns[j].classList.toggle('on',j===best);
+  }
+  var t;
+  track.addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(active,60);},{passive:true});
+  for(var k=0;k<btns.length;k++){
+    btns[k].addEventListener('click',function(){
+      var el=slides[Number(this.getAttribute('data-i'))];
+      if(!el)return;
+      track.scrollTo({left:el.offsetLeft-(track.clientWidth-el.offsetWidth)/2,behavior:'smooth'});
+    });
+  }
+  active();
+}
+scroller('.testi-grid','img','testiDots');
+scroller('#alatTrack','.alat-item','alatDots');
+
+/* tab alat (desktop) */
+(function(){
+  var tabs=document.querySelectorAll('.alat-tabs [role="tab"]');
+  function pick(tab){
+    for(var i=0;i<tabs.length;i++){
+      var on=tabs[i]===tab;
+      tabs[i].setAttribute('aria-selected',on?'true':'false');
+      tabs[i].setAttribute('tabindex',on?'0':'-1');
+      document.getElementById(tabs[i].getAttribute('aria-controls')).classList.toggle('on',on);
+    }
+  }
+  for(var i=0;i<tabs.length;i++){
+    tabs[i].addEventListener('click',function(){pick(this);});
+    tabs[i].addEventListener('keydown',function(e){
+      var idx=Array.prototype.indexOf.call(tabs,this),n=null;
+      if(e.key==='ArrowRight')n=tabs[(idx+1)%tabs.length];
+      if(e.key==='ArrowLeft')n=tabs[(idx-1+tabs.length)%tabs.length];
+      if(n){e.preventDefault();pick(n);n.focus();}
+    });
+  }
+})();
+
+/* lightbox: membuka versi gambar yang sedang tampil (HP atau desktop) */
+(function(){
+  var lb=document.getElementById('lightbox'),img=document.getElementById('lbImg'),close=document.getElementById('lbClose');
+  var last=null;
+  function open(src,alt){
+    img.src=src;img.alt=alt||'';
+    lb.classList.add('on');document.body.style.overflow='hidden';close.focus();
+  }
+  function shut(){lb.classList.remove('on');img.removeAttribute('src');document.body.style.overflow='';if(last)last.focus();}
+  var zs=document.querySelectorAll('[data-zoom]');
+  for(var i=0;i<zs.length;i++){
+    zs[i].setAttribute('tabindex','0');
+    zs[i].setAttribute('role','button');
+    zs[i].addEventListener('click',function(){last=this;open(this.currentSrc||this.src,this.alt);});
+    zs[i].addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();this.click();}});
+  }
+  close.addEventListener('click',shut);
+  lb.addEventListener('click',function(e){if(e.target===lb)shut();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('on'))shut();});
+})();
+</script>
+</body>
+</html>
